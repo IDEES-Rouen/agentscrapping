@@ -8,7 +8,7 @@ MAINTAINER rey <sebastien.rey-coyrehourcq@univ-rouen.fr>
 
 RUN echo http://nl.alpinelinux.org/alpine/edge/testing >> /etc/apk/repositories
 RUN apk upgrade --update-cache --available
-RUN apk add --update && apk add -f gnupg ca-certificates curl dpkg bash su-exec shadow gcc musl-dev libxml2-dev libxslt-dev python-dev libffi-dev mongodb mongodb-tools mongotools-db openssl-dev nmap
+RUN apk add --update && apk add -f gnupg ca-certificates curl dpkg bash su-exec shadow gcc musl-dev libxml2-dev libxslt-dev python-dev libffi-dev openssl-dev nmap
 
 ARG GID=1000
 ARG UID=1000
