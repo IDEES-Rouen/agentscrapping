@@ -18,7 +18,7 @@ class Communes(scrapy.Spider):
         'FEED_EXPORTERS': {
             'csv': 'scrapy.exporters.CsvItemExporter',},
         'FEED_FORMAT' : 'csv',
-        'FEED_URI' : 'commune.csv'
+        'FEED_URI' : '/home/scrapy/backup/commune.csv'
     }
 
     start_urls = ['https://www.meilleursagents.com/prix-immobilier/']

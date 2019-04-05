@@ -1,0 +1,13 @@
+version: '3.4'
+services:
+  scrapagent_service:
+        build: .
+        container_name: "agent_scrap"
+        networks:
+          - scrappy
+        volumes:
+          - /home/reyman/Volumes/csvAgent/backup:/home/scrapy/backup
+
+networks:
+  scrappy:
+    driver: bridge
