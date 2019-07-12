@@ -9,6 +9,7 @@ from scrapy.utils.log import configure_logging
 
 from agent_project.spiders import Prix
 from agent_project.spiders import Communes
+from agent_project.spiders import RealEstateAd
 
 configure_logging()
 runner = CrawlerRunner()
@@ -16,6 +17,7 @@ runner = CrawlerRunner()
 @defer.inlineCallbacks
 def crawl():
     #yield runner.crawl(Communes.Communes)
+    #yield runner.crawl(RealEstateAd.RealEstateAd)
     yield runner.crawl(Prix.Prix)
     reactor.stop()
 
