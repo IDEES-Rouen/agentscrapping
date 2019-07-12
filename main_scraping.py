@@ -15,8 +15,8 @@ runner = CrawlerRunner()
 
 @defer.inlineCallbacks
 def crawl():
-    yield runner.crawl(Communes.Communes)
-    #yield runner.crawl(Prix.Prix)
+    #yield runner.crawl(Communes.Communes)
+    yield runner.crawl(Prix.Prix)
     reactor.stop()
 
 crawl()
