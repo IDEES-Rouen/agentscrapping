@@ -6,7 +6,7 @@ services:
         networks:
           - scrappy
         volumes:
-          - /home/reyman/Volumes/csvAgent/backup:/home/scrapy/backup
+          - /home/${VOL_PATH}/Volumes/csvAgent/backup:/home/scrapy/backup
 
 networks:
   scrappy:
